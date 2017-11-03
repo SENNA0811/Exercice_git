@@ -1,0 +1,143 @@
+/* Feuille de styles CSS */
+
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+}
+
+
+body /*page complète*/
+{
+	background-color: black;
+	display: flex; /*centre <div class=principal> en tenant compte des marges*/
+}
+
+.principal /*= nav + group*/
+{
+	width : 100%; /*occupe toute la largeur de la page*/
+	display: flex;
+	height: 100%;
+}
+
+nav /*navigateur*/
+{
+	width: 10%;
+	background-image: url("brazilian_flag.jpg") ; /*no-repeat evite mosaïque (par défaut)*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 10px 10px 10px 10px; /*angles bordures: haut gauche/haut droite/bas droite/bas gauche*/
+}
+
+.group /*= header + content*/
+{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+h1
+{
+	color: red;
+	font-size: 3em;
+}
+
+header /*= titles (h1+h3) + img*/  
+{
+	padding-top: 20px;
+	display: flex; /*aligne les titres et la photo*/
+}
+
+#titles /*h1+h3*/
+{
+	text-align: center; /*on peut centrer les titres en 1 bloc*/
+	width: 100%; /*sur la totalité du block (aligné sur content) sans tenir compte de la photo*/
+}
+
+img /*senna mini.jpg*/
+{
+	border: 5px white outset;
+	/*contours possibles: none/solid/dotted/dashed/double/groove (relief1)/ridge (relief 2)/outset (surélevé)/inset(enfoncé)*/
+	box-shadow: 5px 5px 5px grey;
+	/*ombre: décalage vertical/ décalage horizontal/adoucissement dégradé (0=pas d'adoucissement)*/
+	margin-right: 20px;
+}
+
+.content /*regroupe les 3 exp : Mon expérience + Mes compétence + Ma formation*/
+{
+	padding-top : 10px;
+	display: flex; /*aligne les 3 blocs par defaut*/
+	justify-content: space-around;
+	width: 95%;
+}
+
+.mclaren
+{
+	width: 100%;
+	align-content: center;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+li,h3
+{
+	color: white;
+	font-size: 1.3em;
+}
+
+li 
+{
+	line-height: 2; /*espace entre les lignes*/
+}
+
+@font-face /*polices télchargées à placer ici*/
+{
+    font-family: 'digital-7';
+    src: url('digital-7.ttf');
+}
+
+h2 /*Mon expérience/Mes compétence/Ma formation*/
+{
+	color: red; 
+	font-family: 'digital-7', arial, verdana, georgia; /*digital-7=police téléchargée, autres=courantes*/
+}
+
+@media all and (max-width: 1024px)
+{
+	nav
+	{
+		display: none;
+	}
+
+	.group
+	{
+		width: 100%;
+	}
+
+	.content /*regroupe les 3 exp : Mon expérience + Mes compétence + Ma formation*/
+	{
+	margin-top: -10px;
+	padding-top : 0px;
+	display: flex; /*aligne les 3 blocs par defaut*/
+	flex-direction: column;
+	}
+
+	.exp
+	{
+		padding-left: 0;
+		width: 100%;
+	}
+
+	li
+	{
+		font-size: 1.1em;
+	}
+}
