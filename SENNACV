@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="files/senna.css" />
+        <title>Ayrton Senna : "Magic"</title>
+    </head>
+
+    <body>
+
+        <div class="principal">
+            <nav>
+            
+            </nav>
+	            <div class="group">
+		            <div>
+		            <header>
+		                <div id="titles">                    
+		                    <h1>Ayrton Senna</h1>
+		                	<h3>Champion du Monde 1988/1990/1991</h3>
+		                </div>
+		                    <a href="files/senna.jpg"><img src="files/senna mini.jpg" alt="photo Ayrton Senna" /></a>
+		            </header>
+
+		            <div class="content">
+			            <div class="exp">
+			                <h2>Mon experience</h2>
+			            		
+			                        <ul>
+			                			<li><strong>1994 :</strong> <em>Williams</em></li>
+			                				<ul>
+			                					<li>3 poles positions</li>
+			                				</ul>	
+			                			
+			                			<li><strong>De 1988 à 1993 :</strong> <em>McLaren</em></li>
+			                				<ul>
+			                					<li> 46 poles positions</li>
+			                					<li> 35 victoires</li>
+			                				</ul>
+			                			
+			                			<li><strong>De 1985 à 1987 :</strong> <em>Lotus</em></li>
+			                				<ul>
+			                					<li> 16 poles positions</li>
+			                					<li> 6 victoires</li>
+			                				</ul>	
+			                		</ul>
+			            </div>
+
+		                <div class="exp">
+		                	<h2>Mes competences</h2>	
+		            			
+		            			<ul>
+		                			<li>Rapide et déterminé</li>
+		                			<li>Habileté dans les dépassements</li>
+		                			<li>Excellente maîtrise sous la pluie </li>
+		                		</ul>
+		            	</div>
+
+		                <div class="exp">
+		            		<h2>Ma formation</h2>
+		            			
+		            			<ol>
+		                			<li>Karting</li>
+		                			<li>Formule Ford 1600</li>
+		                			<li>Formule Ford 2000</li>
+		                			<li>Formule 3</li>
+		                		</ol>
+		                </div> 
+		            </div>
+		        </div>
+		            <footer>
+		            	<img class="mclaren" src="files/mclaren.jpg" alt="photo McLaren" />
+		            </footer>
+	          </div>
+        </div>
+    </body>
+</html>
